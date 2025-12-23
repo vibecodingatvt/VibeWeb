@@ -1,13 +1,16 @@
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 const Main = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen flex flex-col">
       <Navbar />
-      {/* Rest of your page content goes here */}
+      <div className="flex-1"></div>
+      <Footer />
     </div>
   );
 };
 
 export default Main;
+
 

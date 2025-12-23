@@ -8,7 +8,7 @@ const Navbar = () => {
           
           {/* Logo and Brand */}
           <div className="flex items-center gap-3 shrink-0">
-            <img src={logo} alt="VibeCoders Logo" className="h-10 w-auto" />
+            <img src={logo} alt="VibeCoders Logo" className="h-10 w-auto translate-y-[3px]" />
             <span className="text-white font-bold text-xl uppercase font-['Coolvetica']">
               VIBECODERS
             </span>
@@ -17,7 +17,7 @@ const Navbar = () => {
           {/* Spacer */}
           <div className="flex-1"></div>
 
-          {/* Navigation Links and Register Button - Grouped together */}
+          {/* Navigation Links */}
           <div className="hidden md:flex items-center gap-8">
             <a href="#" className="text-white hover:opacity-80 transition-opacity text-base navbar-thin-text">
               About
