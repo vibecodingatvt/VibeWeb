@@ -5,10 +5,11 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-transparent">
       <div className="max-w-[1920px] mx-auto px-6 sm:px-8 lg:px-12 xl:px-16">
         <div className="flex items-center h-20">
+          
           {/* Logo and Brand */}
           <div className="flex items-center gap-3 shrink-0">
             <img src={logo} alt="VibeCoders Logo" className="h-10 w-auto" />
-            <span className="text-white font-bold text-xl tracking-tight uppercase" style={{ fontFamily: 'Roboto, sans-serif' }}>
+            <span className="text-white font-bold text-xl uppercase font-['Coolvetica']">
               VIBECODERS
             </span>
           </div>
@@ -18,19 +19,18 @@ const Navbar = () => {
 
           {/* Navigation Links and Register Button - Grouped together */}
           <div className="hidden md:flex items-center gap-8">
-            <a href="#" className="text-white hover:opacity-80 font-thin transition-opacity text-base" style={{ fontFamily: 'Roboto, sans-serif' }}>
+            <a href="#" className="text-white hover:opacity-80 transition-opacity text-base navbar-thin-text">
               About
             </a>
-            <a href="#" className="text-white hover:opacity-80 font-thin transition-opacity text-base" style={{ fontFamily: 'Roboto, sans-serif' }}>
+            <a href="#" className="text-white hover:opacity-80 transition-opacity text-base navbar-thin-text">
               Mentorship
             </a>
-            <a href="#" className="text-white hover:opacity-80 font-thin transition-opacity text-base" style={{ fontFamily: 'Roboto, sans-serif' }}>
+            <a href="#" className="text-white hover:opacity-80 transition-opacity text-base navbar-thin-text">
               FAQ
             </a>
             {/* Register Button */}
             <button 
-              className="bg-white text-[#252525] px-3 py-0.5 rounded-xl font-extralight hover:opacity-90 transition-opacity text-base whitespace-nowrap"
-              style={{ fontFamily: 'Roboto, sans-serif' }}
+              className="bg-white text-[#252525] px-[15px] py-[3px] rounded-2xl hover:opacity-90 transition-opacity text-base whitespace-nowrap navbar-thin-text"
             >
               Register
             </button>
