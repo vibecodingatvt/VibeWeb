@@ -2,7 +2,7 @@ import logo from '../assets/logo.svg';
 
 const Navbar = () => {
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-transparent">
+    <nav className="relative z-50 bg-transparent">
       <div className="max-w-[1920px] mx-auto px-6 sm:px-8 lg:px-12 xl:px-16">
         <div className="flex items-center h-20">
           
