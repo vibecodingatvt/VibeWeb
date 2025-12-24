@@ -2,6 +2,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import About from '../components/About';
 import Mentorship from '../components/Mentorship';
+import Tech from '../components/Tech';
 
 const Main = () => {
   return (
@@ -10,6 +11,7 @@ const Main = () => {
       <div className="flex-1 relative overflow-x-hidden overflow-y-auto">
         <About />
         <Mentorship />
+        <Tech />
       </div>
       <Footer />
     </div>
