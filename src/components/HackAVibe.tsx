@@ -1,6 +1,6 @@
 const HackAVibe = () => {
   return (
-    <div className="text-left py-12 px-12 mb-48">
+    <div className="relative z-10 text-left py-12 px-12 mb-48">
       {/* Main Title */}
       <h1 className="text-5xl sm:text-6xl lg:text-[250px] font-bold text-[#CECECE] mb-2 font-['Coolvetica']">
         HACKaVIBE

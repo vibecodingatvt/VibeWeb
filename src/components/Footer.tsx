@@ -5,7 +5,7 @@ import Logo from '../assets/Logo.svg';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#252525] w-full text-white p-5 overflow-hidden">
+    <footer className="bg-[#252525] w-full text-white p-5 overflow-hidden relative z-20">
       {/* big section */}
       <div className="w-full pl-6 sm:pl-8 lg:pl-12 xl:pl-16 pr-6 sm:pr-8 lg:pr-12 xl:pr-16 mb-35 overflow-hidden">
         <h1 className="text-left font-['Coolvetica'] leading-none overflow-hidden whitespace-nowrap max-w-full text-[clamp(120px,16vw,280px)] tracking-[-0.02em]">VIBECODERS</h1>

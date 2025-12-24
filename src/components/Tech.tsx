@@ -4,7 +4,7 @@ import WindsurfImage from '../assets/windsurf.png';
 
 const Tech = () => {
   return (
-    <div className="flex flex-col items-center text-white py-12 mb-48">
+    <div className="relative z-10 flex flex-col items-center text-white py-12 mb-48">
       {/* Top Text */}
       <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-12 text-center font-['Coolvetica']">
         Learn to use vibe coding technologies.
