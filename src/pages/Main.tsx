@@ -3,6 +3,7 @@ import Footer from '../components/Footer';
 import About from '../components/About';
 import Mentorship from '../components/Mentorship';
 import Tech from '../components/Tech';
+import HackAVibe from '../components/HackAVibe';
 
 const Main = () => {
   return (
@@ -12,6 +13,7 @@ const Main = () => {
         <About />
         <Mentorship />
         <Tech />
+        <HackAVibe />
       </div>
       <Footer />
     </div>

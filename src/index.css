@@ -7,6 +7,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Coolvetica';
+  src: url('/Coolvetica Rg It.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
 :root {
   font-family: system-ui, Roboto;
   line-height: 1.5;
