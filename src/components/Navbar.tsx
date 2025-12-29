@@ -1,17 +1,38 @@
 import logo from '../assets/logo.svg';
+import { FlipWords } from './ui/flip-words';
+import { useState } from 'react';
 
 const Navbar = () => {
+  const words = [ "INNOVATORS", "CREATORS", "BUILDERS"];
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
     <nav className="relative z-50 bg-transparent">
       <div className="max-w-[1920px] mx-auto px-6 sm:px-8 lg:px-12 xl:px-16">
         <div className="flex items-center h-20">
-          
+
           {/* Logo and Brand */}
           <div className="flex items-center gap-3 shrink-0">
-            <img src={logo} alt="VibeCoders Logo" className="h-10 w-auto translate-y-[3px]" />
-            <span className="text-white font-bold text-xl uppercase font-['Coolvetica']">
-              VIBECODERS
-            </span>
+            <div className="relative w-10 h-10 group">
+              <img
+                src={logo}
+                className="relative z-10 w-full h-full object-contain"
+                alt="VibeCoders Logo"
+              />
+              <div className="halo opacity-0 group-hover:opacity-100"></div>
+            </div>
+
+            <div 
+              className="text-white font-bold text-xl uppercase font-['Coolvetica']"
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+            >
+              {isHovered ? (
+                <FlipWords words={words} className="text-white" duration={2500} />
+              ) : (
+                <span> VIBECODERS</span>
+              )}
+            </div>
           </div>
 
           {/* Spacer */}
@@ -29,7 +50,7 @@ const Navbar = () => {
               FAQ
             </a>
             {/* Register Button */}
-            <button 
+            <button
               className="bg-white text-[#252525] px-[15px] py-[3px] rounded-2xl hover:opacity-90 transition-opacity text-base whitespace-nowrap navbar-thin-text"
             >
               Register
@@ -43,14 +64,14 @@ const Navbar = () => {
           <div className="flex items-center shrink-0">
             {/* Dark Mode Toggle Icon */}
             <button className="text-white hover:opacity-80 transition-opacity p-1">
-              <svg 
-                width="24" 
-                height="24" 
-                viewBox="0 0 24 24" 
-                fill="none" 
-                stroke="currentColor" 
-                strokeWidth="2" 
-                strokeLinecap="round" 
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
                 strokeLinejoin="round"
                 className="w-6 h-6"
               >
